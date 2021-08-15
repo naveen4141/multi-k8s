@@ -9,7 +9,8 @@ docker push naveen4141/multi-client:$SHA
 docker push naveen4141/multi-server:$SHA
 docker push naveen4141/multi-worker:$SHA
 
+
+kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=naveen4141/multi-server:$SHA
 kubectl set image deployments/client-deployment client=naveen4141/multi-client:$SHA
 kubectl set image deployments/worker-deployment worker=naveen4141/multi-worker:$SHA
-kubectl apply -f k8s
