@@ -5,7 +5,7 @@ docker push naveen4141/multi-client:latest
 docker push naveen4141/multi-server:latest
 docker push naveen4141/multi-worker:latest
 
-ocker push naveen4141/multi-client:$SHA
+docker push naveen4141/multi-client:$SHA
 docker push naveen4141/multi-server:$SHA
 docker push naveen4141/multi-worker:$SHA
 
