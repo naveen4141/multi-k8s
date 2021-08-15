@@ -1,5 +1,5 @@
 docker build -t naveen4141/multi-client:latest -t naveen4141/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t naveen4141/multi-server:latest -t naveen4141/multi-serveri:$SHA -f ./server/Dockerfile ./server
+docker build -t naveen4141/multi-server:latest -t naveen4141/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t naveen4141/multi-worker:latest -t naveen4141/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push naveen4141/multi-client:latest
 docker push naveen4141/multi-server:latest
